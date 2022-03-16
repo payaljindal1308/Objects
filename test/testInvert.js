@@ -6,7 +6,7 @@ console.log(getInvertedObject(testObject)); // output : { '36': 'age', 'Bruce Wa
 const arrayObject = ['The', 'blue', 'sky'];
 console.log(getInvertedObject(arrayObject)); // output : { The: '0', blue: '1', sky: '2' }
 
-const anySimpleObject = { 1: 'The', 2: 'blue', 3: 'sky' };
+const anySimpleObject = { 1: {'The' : 3, 'sky': 4}, 2: 'blue', 3: 'color' };
 console.log(getInvertedObject(anySimpleObject)); // output : { The: '1', blue: '2', sky: '3' }
 
 const differentKeyTypeObject = { 125: 'hello', 'second' : 'world', 10: 'program' }; 
